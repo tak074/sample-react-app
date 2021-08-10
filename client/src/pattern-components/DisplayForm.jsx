@@ -31,7 +31,7 @@ class DisplayForm extends Component {
       <div className="bx--grid">
         {showDescription && (
           <Header
-            title="Version Control"
+            title="Version Control2"
             subtitle="Displays a model object as a form in a read only display."
           />
         )}
