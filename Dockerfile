@@ -30,8 +30,8 @@ EXPOSE 3000/tcp
 
 
 ## Uncomment the below line to update image security content if any
-# USER root
-# RUN dnf -y update-minimal --security --sec-severity=Important --sec-severity=Critical && dnf clean all 
+USER root
+RUN dnf -y update-minimal --security --sec-severity=Important --sec-severity=Critical && dnf clean all 
 
 COPY ./licenses /licenses
 
